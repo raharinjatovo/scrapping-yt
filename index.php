@@ -2,7 +2,7 @@
 	<?php
  // header('Content-type: text/html; charset=utf-8');
 
-	//prise de données par youtube api 50 resultat
+	
 	$search=$_GET['search'];
 $link="https://www.youtube.com/results?search_query=".rawurlencode($search)."";
 //
@@ -57,7 +57,7 @@ for ($i=0; $i <22 ; $i++) {
 		        <div class="card-body">
 		        <h5 class="card-title">'.$data[$i]->{'videoRenderer'}->{'title'}
 						->{'runs'}[0]->{'text'}.'</h5>
-							
+
 		          <p class="card-text">'.$data[$i]->{'videoRenderer'}->{'descriptionSnippet'}
 							->{'runs'}[0]->{'text'}.'</p>
 							      <form method="get" action="mp3_recieve.php" target="_blank"  >
@@ -68,7 +68,7 @@ for ($i=0; $i <22 ; $i++) {
 											->{'runs'}[0]->{'text'}).'" >
 
 
-											
+
 		                 </form>
 
 		        </div>
@@ -84,7 +84,7 @@ for ($i=0; $i <22 ; $i++) {
 	?>
 
 
-  <?php 
+  <?php
 
  ?>
 

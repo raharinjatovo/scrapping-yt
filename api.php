@@ -2,7 +2,7 @@
   <?php
 
 header("Content-Type: application/json; charset=UTF-8");
-  //prise de données par youtube api 50 resultat
+
   $search=$_GET['search'];
 $link="https://www.youtube.com/results?search_query=".rawurlencode($search)."";
 //
